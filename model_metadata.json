@@ -1,0 +1,73 @@
+{
+    "project_title": "Diabetes Patients Diagnostic Classification",
+    "task_type": "classification",
+    "target_column": "outcome",
+    "best_model_name": "LogisticRegression",
+    "numeric_features": [
+        "pregnancies",
+        "glucose",
+        "blood_pressure",
+        "skin_thickness",
+        "insulin",
+        "bmi",
+        "diabetes_pedigree_function",
+        "age"
+    ],
+    "categorical_features": [],
+    "feature_ranges": {
+        "pregnancies": {
+            "min": 0,
+            "max": 12,
+            "default": 6,
+            "dtype": "int"
+        },
+        "glucose": {
+            "min": 70,
+            "max": 200,
+            "default": 131,
+            "dtype": "int"
+        },
+        "blood_pressure": {
+            "min": 45,
+            "max": 115,
+            "default": 79,
+            "dtype": "int"
+        },
+        "skin_thickness": {
+            "min": 10,
+            "max": 55,
+            "default": 31,
+            "dtype": "int"
+        },
+        "insulin": {
+            "min": 15,
+            "max": 450,
+            "default": 233,
+            "dtype": "int"
+        },
+        "bmi": {
+            "min": 18.0,
+            "max": 50.0,
+            "default": 33.84,
+            "dtype": "float"
+        },
+        "diabetes_pedigree_function": {
+            "min": 0.08,
+            "max": 2.2,
+            "default": 1.12,
+            "dtype": "float"
+        },
+        "age": {
+            "min": 21,
+            "max": 72,
+            "default": 46,
+            "dtype": "int"
+        }
+    },
+    "categorical_options": {},
+    "metrics": {
+        "accuracy": 0.9778,
+        "f1_score": 0.9667,
+        "roc_auc": 0.9977
+    }
+}
